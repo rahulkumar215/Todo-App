@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --color-active-text: hsl(220, 98%, 61%);
+  --color-checkbox-background: linear-gradient hsl(192, 100%, 67%) to
+    hsl(280, 87%, 65%);
+
+  // ### Light Theme
+
+  --color-primary-light-bg: hsl(0, 0%, 98%);
+  --color-primary-dark-bg: hsl(236, 33%, 92%);
+  --color-primary-text-color: hsl(233, 11%, 84%);
+  --color-secondary-text-color: hsl(236, 9%, 61%);
+  --color-secondary: hsl(235, 19%, 35%);
+
+  // ### Dark Theme
+
+  //   --color-very-dark-blue: hsl(235, 21%, 11%);
+  //   --color-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  //   --color-light-grayish-blue: hsl(234, 39%, 85%);
+  //   --color-light-grayish-blue-hover: hsl(236, 33%, 92%);
+  //   --color-dark-grayish-blue: hsl(234, 11%, 52%);
+  --color-very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --color-very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+  --font-family: "Josefin Sans", sans-serif;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --font-size-regular: 62.5%;
+}
+
+[data-theme="dark"] {
+  --color-primary-light-bg: hsl(235, 21%, 11%);
+  --color-primary-dark-bg: hsl(235, 24%, 19%);
+  --color-primary-text-color: hsl(234, 39%, 85%);
+  --color-secondary-text-color: hsl(236, 33%, 92%);
+  --color-secondary: hsl(234, 11%, 52%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: var(--font-size-regular);
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--font-family);
+  transition: all 0.2s ease-in-out;
+}
