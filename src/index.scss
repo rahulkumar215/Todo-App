@@ -4,22 +4,19 @@
   --color-active-text: hsl(220, 98%, 61%);
   --color-checkbox-background: linear-gradient hsl(192, 100%, 67%) to
     hsl(280, 87%, 65%);
+  --color-white: #fff;
 
-  // ### Light Theme
+  // Light Theme
 
   --color-primary-light-bg: hsl(0, 0%, 98%);
   --color-primary-dark-bg: hsl(236, 33%, 92%);
   --color-primary-text-color: hsl(233, 11%, 84%);
   --color-secondary-text-color: hsl(236, 9%, 61%);
   --color-secondary: hsl(235, 19%, 35%);
+  --background-image: url("./assets/images/bg-desktop-light.jpg");
 
-  // ### Dark Theme
+  // Dark Theme
 
-  //   --color-very-dark-blue: hsl(235, 21%, 11%);
-  //   --color-very-dark-desaturated-blue: hsl(235, 24%, 19%);
-  //   --color-light-grayish-blue: hsl(234, 39%, 85%);
-  //   --color-light-grayish-blue-hover: hsl(236, 33%, 92%);
-  //   --color-dark-grayish-blue: hsl(234, 11%, 52%);
   --color-very-dark-grayish-blue: hsl(233, 14%, 35%);
   --color-very-dark-grayish-blue: hsl(237, 14%, 26%);
 
@@ -36,6 +33,7 @@
   --color-primary-text-color: hsl(234, 39%, 85%);
   --color-secondary-text-color: hsl(236, 33%, 92%);
   --color-secondary: hsl(234, 11%, 52%);
+  --background-image: url("./assets/images/bg-desktop-dark.jpg");
 }
 
 *,
@@ -52,7 +50,22 @@ html {
 }
 
 body {
+  width: 100%;
+  height: 100vh;
+
   font-size: 1.8rem;
   font-family: var(--font-family);
-  transition: all 0.2s ease-in-out;
+  background-color: var(--color-primary-light-bg);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+//   --color-very-dark-blue: hsl(235, 21%, 11%);
+//   --color-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+//   --color-light-grayish-blue: hsl(234, 39%, 85%);
+//   --color-light-grayish-blue-hover: hsl(236, 33%, 92%);
+//   --color-dark-grayish-blue: hsl(234, 11%, 52%);

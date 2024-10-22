@@ -1,0 +1,27 @@
+.header {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+
+  &Title {
+    color: var(--color-white);
+    font-size: 4.5rem;
+    letter-spacing: 2rem;
+  }
+
+  &Btn {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    justify-self: end;
+    cursor: pointer;
+  }
+}
+
+:global(.header__btn__icon) {
+  scale: 1.2;
+}
