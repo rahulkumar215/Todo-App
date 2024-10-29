@@ -1,0 +1,28 @@
+.tasksContainer {
+  background: var(--color-primary-dark-bg);
+
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+
+  position: relative;
+
+  height: 100%;
+
+  border-radius: 0.8rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  color: white;
+
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-secondary);
+  }
+}

@@ -1,0 +1,36 @@
+.inputContainer {
+  grid-row: 2 / span 1;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-primary-dark-bg);
+  padding: 2.3rem 2.8rem;
+  border-radius: 0.8rem;
+
+  margin-bottom: 2.8rem;
+
+  input {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 2.2rem;
+    outline: none;
+    transform: translateY(2px);
+    color: var(--color-white);
+    caret-color: var(--color-active-text);
+
+    &::placeholder {
+      color: var(--color-secondary);
+    }
+  }
+
+  :global(.checkbox) {
+    &:hover {
+      background: var(--color-secondary);
+    }
+  }
+}

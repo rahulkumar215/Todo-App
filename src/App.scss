@@ -16,7 +16,10 @@
   display: grid;
 
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: min-content repeat(3, 1fr);
+  grid-template-rows: min-content min-content minmax(45.5rem, max-content) repeat(
+      2,
+      1fr
+    );
 
   justify-content: center;
   align-items: center;
@@ -24,4 +27,84 @@
   width: 63.5rem;
   // height: 70rem;
   height: 77.2rem;
+
+  .btn-group {
+    height: 100%;
+    width: 100%;
+
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 1;
+
+    background: var(--color-primary-dark-bg);
+
+    font-size: 1.6rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      cursor: pointer;
+      background: transparent;
+      color: var(--color-secondary);
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0 1rem;
+      font-weight: 400;
+      transform: all 0.5s ease-in;
+
+      &:hover {
+        color: var(--color-white);
+      }
+
+      &-acitve {
+        color: var(--color-active-text);
+      }
+    }
+  }
+
+  .clear-btn {
+    grid-column: 5 / -1;
+    grid-row: 4 / span 1;
+
+    background: var(--color-primary-dark-bg);
+    color: var(--color-secondary);
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 0.5rem;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    padding-right: 0.5rem;
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  .tot-items {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    color: var(--color-secondary);
+    background-color: var(--color-primary-dark-bg);
+
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+
+    border-bottom-left-radius: 0.5rem;
+
+    p {
+      font-size: 1.6rem;
+      align-self: center;
+      justify-self: center;
+    }
+  }
 }

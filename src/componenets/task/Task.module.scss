@@ -1,0 +1,37 @@
+.task {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-out;
+
+  font-size: 2.2rem;
+
+  padding: 2.3rem 2.8rem;
+  border-bottom: 1px solid var(--color-secondary);
+
+  :global(.transparent-bg) {
+    background-color: transparent !important;
+  }
+
+  .deleteBtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    scale: 1.2;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+
+    .deleteBtn {
+      display: block;
+    }
+  }
+}
+
+.checked {
+  text-decoration: line-through;
+  color: var(--color-secondary);
+}

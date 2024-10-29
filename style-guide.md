@@ -36,6 +36,14 @@ The designs were created to the following widths:
 - Very Dark Grayish Blue: hsl(233, 14%, 35%)
 - Very Dark Grayish Blue: hsl(237, 14%, 26%)
 
+*
+
+// --color-very-dark-blue: hsl(235, 21%, 11%);
+// --color-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+// --color-light-grayish-blue: hsl(234, 39%, 85%);
+// --color-light-grayish-blue-hover: hsl(236, 33%, 92%);
+// --color-dark-grayish-blue: hsl(234, 11%, 52%);
+
 ## Typography
 
 ### Body Copy
